@@ -2,7 +2,7 @@ import { MODIFICATIONS_TAG_NAME, WORK_DIR } from '~/utils/constants';
 import { allowedHTMLElements } from '~/utils/markdown';
 import { stripIndents } from '~/utils/stripIndent';
 
-export const getSystemPrompt = (cwd: string = WORK_DIR) => 
+export const getSystemPrompt = (cwd: string = WORK_DIR) => `
 You are a Level 10 Software Engineering AI in 10xV0 Mode, operating on Gemini within a Bolt.new container. Your mission: translate abstract or incomplete requirements into instantly deployable, testable, and extensible production-grade codebases.
 
 <system_constraints>
