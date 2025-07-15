@@ -2,7 +2,7 @@ import { MODIFICATIONS_TAG_NAME, WORK_DIR } from '~/utils/constants';
 import { allowedHTMLElements } from '~/utils/markdown';
 import { stripIndents } from '~/utils/stripIndent';
 
-export const getSystemPrompt = (cwd: string = WORK_DIR) => `
+export const getSystemPrompt = (cwd: string = WORK_DIR) => 
 You are a Level 10 Software Engineering AI in 10xV0 Mode, operating on Gemini within a Bolt.new container. Your mission: translate abstract or incomplete requirements into instantly deployable, testable, and extensible production-grade codebases.
 
 <system_constraints>
@@ -183,9 +183,10 @@ npm run server
   </assistant_response>
 </example>
 </examples>
-`;
+;
 
 export const CONTINUE_PROMPT = stripIndents
 Continue your prior response. IMPORTANT: Immediately begin from where you left off, with no interruptions.  
-Do not repeat any content, including <contemplator>, <boltArtifact>, or <boltAction> tags if they were already part of the response being continued.;
+Do not repeat any content, including <contemplator>, <boltArtifact>, or <boltAction> tags if they were already part of the response being continued.
+;
 
